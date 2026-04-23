@@ -280,9 +280,7 @@ export default function CarstenKrauseWebsite() {
               <Card>
                 <div className="imageCard bookImage"><img src="/images/book.png" alt="The AI-Ready Leader book" /></div>
                 
-                <div style={{ marginTop: 18 }}><Button href="https://www.amazon.com/dp/YOURBOOKID" target="_blank"
-  rel="noopener noreferrer"
-  className="btn-primary">Buy the Book on Amazon</Button></div>
+               
               
                 <div style={{ marginTop: 18 }}><Button href="#contact" primary>Request Book + Speaking Info</Button></div>
               </Card>
@@ -294,6 +292,8 @@ export default function CarstenKrauseWebsite() {
                   <div className="eyebrow">Featured Book</div>
                   <h3>The AI-Ready Leader</h3>
                   <p>HI + AI = ECI™ positions AI transformation as a leadership problem first, not a tooling problem. It gives executives a practical model for scaling AI with stronger judgment, better alignment, and more durable business outcomes.</p>
+                <div style={{ marginTop: 18 }}><Button href="https://www.amazon.com/dp/B0GS96RX1Z/" target="_blank"
+  rel="noopener noreferrer">Buy the Book on Amazon</Button></div>
                 </Card>
                 <div className="endorsements">
                   {endorsements.map(([quote, by]) => <Card key={by}><div className="quote">“{quote}”</div><div className="quoteBy">— {by}</div></Card>)}
