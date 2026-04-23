@@ -279,8 +279,16 @@ export default function CarstenKrauseWebsite() {
             <div className="bookGrid">
               <Card>
                 <div className="imageCard bookImage"><img src="/images/book.png" alt="The AI-Ready Leader book" /></div>
+                
+                <div style={{ marginTop: 18 }}><Button href="https://www.amazon.com/dp/YOURBOOKID" target="_blank"
+  rel="noopener noreferrer"
+  className="btn-primary">Buy the Book on Amazon</Button></div>
+              
                 <div style={{ marginTop: 18 }}><Button href="#contact" primary>Request Book + Speaking Info</Button></div>
               </Card>
+             
+              
+            
               <div>
                 <Card>
                   <div className="eyebrow">Featured Book</div>
