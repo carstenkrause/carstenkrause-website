@@ -325,7 +325,7 @@ export default function CarstenKrauseWebsite() {
           <Section id="media" eyebrow="Media & Links" title="Thought Leadership, Media, and Executive Resources" subtitle="Explore articles, commentary, and executive resources across CDO TIMES, LinkedIn, and The AI-Ready Leader.">
             <div className="mediaGrid">
               <Card><h3>CDO TIMES</h3><p>Executive articles, leadership analysis, and digital transformation insights.</p><Button href="https://cdotimes.com">Visit CDO TIMES</Button></Card>
-              <Card><h3>LinkedIn</h3><p>Executive-facing posts, commentary, launch content, and thought leadership.</p><Button href="https://www.linkedin.com">Open LinkedIn</Button></Card>
+              <Card><h3>LinkedIn</h3><p>Executive-facing posts, commentary, launch content, and thought leadership.</p><Button href="https://www.linkedin.com/in/carstenkrause">Open LinkedIn</Button></Card>
               <Card><h3>The AI-Ready Leader</h3><p>Book, endorsements, keynote alignment, and workshop tie-ins.</p><Button href="#book">View Book</Button></Card>
             </div>
           </Section>
@@ -336,7 +336,7 @@ export default function CarstenKrauseWebsite() {
                 <div className="eyebrow">Primary Contact</div>
                 <h3 style={{wordBreak:'break-word'}}>carsten.krause@ckcdigital.com</h3>
                 <p>Use this email for keynote requests, workshop inquiries, leadership advisory discussions, and media opportunities.</p>
-                <Button href="mailto:carsten.krause@ckcdigital.com" primary>Email Carsten</Button>
+                <Button href="mailto:contact@cdotimes.com" primary>Email Carsten</Button>
               </Card>
               <Card>
                 <div className="formGrid">
@@ -346,7 +346,7 @@ export default function CarstenKrauseWebsite() {
                   <div><label>Interest</label><select><option>Keynote</option><option>Workshop</option><option>Advisory</option><option>Media inquiry</option></select></div>
                   <div className="span2"><label>What are you looking for?</label><textarea placeholder="Tell us about the event, audience, workshop goal, or advisory need." /></div>
                 </div>
-                <div style={{marginTop: 18}}><Button href="mailto:carsten.krause@ckcdigital.com" primary>Submit Inquiry</Button></div>
+                <div style={{marginTop: 18}}><Button href="mailto:contact@cdotimes.com" primary>Submit Inquiry</Button></div>
               </Card>
             </div>
           </Section>
@@ -360,7 +360,7 @@ export default function CarstenKrauseWebsite() {
             </div>
             <div className="footerLinks">
               <a href="https://cdotimes.com">CDO TIMES</a>
-              <a href="mailto:carsten.krause@ckcdigital.com">Contact</a>
+              <a href="mailto:contact@cdotimes.com">Contact</a>
               <a href="#book">Book</a>
               <a href="#speaking">Speaking</a>
             </div>
