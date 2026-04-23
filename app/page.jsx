@@ -342,8 +342,8 @@ export default function CarstenKrauseWebsite() {
             <div className="contactGrid">
               <Card>
                 <div className="eyebrow">Primary Contact</div>
-                <h3 style={{wordBreak:'break-word'}}>carsten.krause@ckcdigital.com</h3>
-                <p>Use this email for keynote requests, workshop inquiries, leadership advisory discussions, and media opportunities.</p>
+                <h3 style={{wordBreak:'break-word'}}>contact@cdotimes.com</h3>
+                <p>Use this email for keynote requests, workshop inquiries, leadership advisory discussions, leadership as a service engagements and media opportunities.</p>
                 <Button href="mailto:contact@cdotimes.com" primary>Email Carsten</Button>
               </Card>
               <Card>
