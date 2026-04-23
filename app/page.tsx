@@ -290,8 +290,8 @@ export default function CarstenKrauseWebsite() {
               </div>
 
               <div className="mt-6 grid grid-cols-3 gap-4">
-                <img src="/images/keynote-1.jpg" className="rounded-2xl object-cover h-32 w-full" />
-                <img src="/images/keynote-2.jpg" className="rounded-2xl object-cover h-32 w-full" />
+                <img src="/images/keynote-1.png" className="rounded-2xl object-cover h-32 w-full" />
+                <img src="/images/keynote-2.png" className="rounded-2xl object-cover h-32 w-full" />
                 <img src="/images/keynote-3.jpg" className="rounded-2xl object-cover h-32 w-full" />
               </div>
             </div>
@@ -307,8 +307,8 @@ export default function CarstenKrauseWebsite() {
           <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-8">
             <div className="lg:col-span-2">
               <div className="grid md:grid-cols-3 gap-4 mb-6">
-                <img src="/images/keynote-1.jpg" className="rounded-2xl object-cover h-48 w-full" alt="Keynote speaking" />
-                <img src="/images/keynote-2.jpg" className="rounded-2xl object-cover h-48 w-full" alt="Executive speaking" />
+                <img src="/images/keynote-1.png" className="rounded-2xl object-cover h-48 w-full" alt="Keynote speaking" />
+                <img src="/images/keynote-2.png" className="rounded-2xl object-cover h-48 w-full" alt="Executive speaking" />
                 <img src="/images/keynote-3.jpg" className="rounded-2xl object-cover h-48 w-full" alt="Conference keynote" />
               </div>
             </div>
@@ -402,9 +402,9 @@ export default function CarstenKrauseWebsite() {
         >
           <div>
             <div className="grid md:grid-cols-3 gap-4 mb-6">
-              <img src="/images/book.jpg" className="rounded-2xl object-cover h-56 w-full" alt="Book" />
-              <img src="/images/consulting.jpg" className="rounded-2xl object-cover h-56 w-full" alt="Consulting" />
-              <img src="/images/workshop.jpg" className="rounded-2xl object-cover h-56 w-full" alt="Workshop" />
+              <img src="/images/book.png" className="rounded-2xl object-cover h-56 w-full" alt="Book" />
+              <img src="/images/consulting.png" className="rounded-2xl object-cover h-56 w-full" alt="Consulting" />
+              <img src="/images/workshop.png" className="rounded-2xl object-cover h-56 w-full" alt="Workshop" />
             </div>
 
             <div className="grid md:grid-cols-3 gap-6">
@@ -525,7 +525,7 @@ export default function CarstenKrauseWebsite() {
                 <p>Share the audience, event, business challenge, or leadership objective, and we can discuss the best format.</p>
               </div>
               <div className="mt-8 flex flex-wrap gap-3">
-                <CTAButton href="mailto:carsten.krause@ckcdigital.com" primary icon="✉">
+                <CTAButton href="mailto:sales@cdotimes.com" primary icon="✉">
                   Email Carsten
                 </CTAButton>
                 <CTAButton href="https://cdotimes.com" icon="◌">
