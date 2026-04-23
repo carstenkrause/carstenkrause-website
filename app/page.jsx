@@ -79,12 +79,13 @@ export default function CarstenKrauseWebsite() {
         .page {
           min-height: 100vh;
           overflow-x: hidden;
+          padding-top: 72px;
           background: radial-gradient(circle at top right, rgba(244,161,26,.12), transparent 26%), linear-gradient(180deg, var(--navy2), var(--navy) 38%, #050C17);
           color: var(--text);
           font-family: Arial, Helvetica, sans-serif;
         }
         .container { width: min(1180px, calc(100% - 32px)); margin: 0 auto; }
-        .header { position: sticky; top: 0; z-index: 20; background: rgba(4,12,24,.86); backdrop-filter: blur(16px); border-bottom: 1px solid var(--line); }
+        .header { position: fixed; top: 0; left: 0; right: 0; width: 100%; z-index: 999; background: rgba(4,12,24,.92); backdrop-filter: blur(16px); border-bottom: 1px solid var(--line); }
         .navWrap { min-height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
         .brand { text-decoration: none; color: #fff; display: flex; align-items: center; gap: 12px; min-width: 0; }
         .logo { width: 42px; height: 42px; border-radius: 14px; border: 1px solid rgba(244,161,26,.35); display: grid; place-items: center; color: var(--gold); font-weight: 800; background: rgba(244,161,26,.12); }
@@ -231,7 +232,7 @@ export default function CarstenKrauseWebsite() {
 
               <div className="heroVisual">
                 <div className="heroImage">
-                  <img src="/images/keynote-hero.png" alt="Carsten Krause keynote" />
+                  <img src="/images/keynote-hero.jpg" alt="Carsten Krause keynote" />
                   <div className="heroOverlay">
                     <div className="heroOverlayTitle">HI + AI = <span className="gold">ECI™</span></div>
                     <p>Elevated Collaborative Intelligence™ for executive leaders scaling AI across the enterprise.</p>
