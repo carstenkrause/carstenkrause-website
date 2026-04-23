@@ -231,7 +231,7 @@ export default function CarstenKrauseWebsite() {
 
               <div className="heroVisual">
                 <div className="heroImage">
-                  <img src="/images/keynote-hero.jpg" alt="Carsten Krause keynote" />
+                  <img src="/images/keynote-hero.png" alt="Carsten Krause keynote" />
                   <div className="heroOverlay">
                     <div className="heroOverlayTitle">HI + AI = <span className="gold">ECI™</span></div>
                     <p>Elevated Collaborative Intelligence™ for executive leaders scaling AI across the enterprise.</p>
