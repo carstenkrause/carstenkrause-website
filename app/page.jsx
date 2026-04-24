@@ -6,6 +6,7 @@ const navItems = [
   ["speaking", "Speaking"],
   ["book", "Book"],
   ["advisory", "Advisory"],
+  ["executives", "Executive Network"],
   ["media", "Media"],
   ["contact", "Contact"],
 ];
@@ -20,7 +21,7 @@ const keynoteTopics = [
 const services = [
   ["Keynotes", "High-impact talks for executive audiences, leadership summits, customer events, and strategic offsites."],
   ["Executive Workshops", "Practical sessions to assess readiness, align stakeholders, and convert AI ambition into a focused action plan."],
-  ["Strategic Advisory", "Senior-level guidance for organizations that need strategic AI, digital, data, and transformation leadership."],
+  ["Strategic Advisory", "Senior-level guidance focused on AI, digital, and transformation strategy, with execution supported through a curated network of experienced executive leaders."],
 ];
 
 const endorsements = [
@@ -29,8 +30,17 @@ const endorsements = [
   ["The ECI equation defines leadership in the AI era. Carsten’s storytelling and real-world examples demonstrate how to responsibly unlock AI innovation while building a culture where people and AI thrive together.", "Grant Ecker, VP Enterprise Architecture, Ecolab"],
 ];
 
-function Button({ href, children, primary = false }) {
-  return <a className={primary ? "btn btnPrimary" : "btn btnSecondary"} href={href}>{children}</a>;
+function Button({ href, children, primary = false, target, rel }) {
+  return (
+    <a
+      className={primary ? "btn btnPrimary" : "btn btnSecondary"}
+      href={href}
+      target={target}
+      rel={rel}
+    >
+      {children}
+    </a>
+  );
 }
 
 function Section({ id, eyebrow, title, subtitle, children }) {
@@ -91,7 +101,7 @@ export default function CarstenKrauseWebsite() {
         .logo { width: 42px; height: 42px; border-radius: 14px; border: 1px solid rgba(244,161,26,.35); display: grid; place-items: center; color: var(--gold); font-weight: 800; background: rgba(244,161,26,.12); }
         .brandName { font-weight: 800; white-space: nowrap; }
         .brandSub { font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
-        .nav { display: flex; gap: 26px; align-items: center; }
+        .nav { display: flex; gap: 22px; align-items: center; }
         .nav a { color: var(--muted); text-decoration: none; font-size: 14px; }
         .nav a:hover { color: #fff; }
         .navCtas { display: flex; gap: 12px; }
@@ -130,7 +140,6 @@ export default function CarstenKrauseWebsite() {
         .cardGrid { display: grid; gap: 18px; }
         .card { border: 1px solid var(--line); background: rgba(255,255,255,.05); border-radius: 28px; padding: 26px; box-shadow: 0 22px 60px rgba(0,0,0,.22); }
         .card p { color: var(--muted); line-height: 1.65; }
-        .sticky { position: sticky; top: 96px; }
         .tag { display: inline-block; margin-top: 16px; color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .12em; border: 1px solid var(--line); border-radius: 999px; padding: 9px 12px; }
         .bookGrid { margin-top: 36px; display: grid; grid-template-columns: minmax(280px, .75fr) minmax(0, 1.25fr); gap: 28px; align-items: start; }
         .bookImage img { height: 520px; object-fit: cover; }
@@ -165,7 +174,6 @@ export default function CarstenKrauseWebsite() {
           .heroVisual { order: 1; }
           .heroImage img { height: 560px; }
           .twoCol, .bookGrid, .engageGrid, .contactGrid { grid-template-columns: 1fr; }
-          .sticky { position: static; }
         }
         @media (max-width: 760px) {
           .container { width: min(100% - 28px, 1180px); }
@@ -279,21 +287,19 @@ export default function CarstenKrauseWebsite() {
             <div className="bookGrid">
               <Card>
                 <div className="imageCard bookImage"><img src="/images/book.png" alt="The AI-Ready Leader book" /></div>
-                
-               
-              
                 <div style={{ marginTop: 18 }}><Button href="#contact" primary>Request Book + Speaking Info</Button></div>
               </Card>
-             
-              
-            
+
               <div>
                 <Card>
                   <div className="eyebrow">Featured Book</div>
                   <h3>The AI-Ready Leader</h3>
                   <p>HI + AI = ECI™ positions AI transformation as a leadership problem first, not a tooling problem. It gives executives a practical model for scaling AI with stronger judgment, better alignment, and more durable business outcomes.</p>
-                <div style={{ marginTop: 18 }}><Button href="https://www.amazon.com/dp/B0GS96RX1Z/" target="_blank"
-  rel="noopener noreferrer">Buy the Book on Amazon</Button></div>
+                  <div style={{ marginTop: 18 }}>
+                    <Button href="https://www.amazon.com/dp/B0GS96RX1Z/" target="_blank" rel="noopener noreferrer" primary>
+                      Buy the Book on Amazon
+                    </Button>
+                  </div>
                 </Card>
                 <div className="endorsements">
                   {endorsements.map(([quote, by]) => <Card key={by}><div className="quote">“{quote}”</div><div className="quoteBy">— {by}</div></Card>)}
@@ -317,7 +323,7 @@ export default function CarstenKrauseWebsite() {
                 <h3>From Executive Insight to Measurable Business Action</h3>
                 <p><b style={{color:'#fff'}}>Keynotes</b> help leadership teams frame the challenge, align around priorities, and create urgency for action.</p>
                 <p><b style={{color:'#fff'}}>Workshops</b> turn executive discussion into practical roadmaps, decisions, and next steps tailored to your organization.</p>
-                <p><b style={{color:'#fff'}}>Advisory support</b> provides ongoing senior-level guidance for organizations that need execution, governance, and leadership follow-through.</p>
+                <p><b style={{color:'#fff'}}>Advisory support</b> provides senior-level guidance, with execution enabled through a trusted network of experienced executive leaders aligned to your transformation goals.</p>
               </Card>
               <div className="engageList">
                 {[
@@ -330,6 +336,61 @@ export default function CarstenKrauseWebsite() {
             </div>
           </Section>
 
+          <Section 
+            id="executives" 
+            eyebrow="Executive Network" 
+            title="Access Proven Executive Leaders for Real Execution" 
+            subtitle="Beyond advisory, organizations often need experienced leaders who can step in and drive outcomes. Through CDO TIMES, access a curated network of CIOs, CDOs, and transformation executives with a track record of delivering measurable results."
+          >
+            <div className="twoCol">
+              <div className="cardGrid">
+                <Card>
+                  <h3>Enterprise-Grade Execution</h3>
+                  <p>Work with experienced executives who have led AI, digital, data, and transformation initiatives across Fortune 500 organizations and high-growth companies.</p>
+                  <div className="tag">CIO • CDO • AI Leaders • Transformation Executives</div>
+                </Card>
+
+                <Card>
+                  <h3>Flexible Engagement Models</h3>
+                  <p>From fractional leadership to focused transformation engagements, access the right level of expertise based on your organization's needs and timeline.</p>
+                  <div className="tag">Fractional • Advisory • Transformation Leadership</div>
+                </Card>
+
+                <Card>
+                  <h3>Outcome-Focused Leadership</h3>
+                  <p>Each executive is selected based on proven delivery, not theory. Focus areas include AI scaling, governance, tech debt reduction, and enterprise transformation.</p>
+                  <div className="tag">Measured Impact • Business Outcomes • Execution</div>
+                </Card>
+              </div>
+
+              <Card>
+                <div className="eyebrow">CDO TIMES Executive Network</div>
+                <h3>Explore the Executive Leadership Network</h3>
+                <p>The executive network is curated through CDO TIMES and connects organizations with experienced leaders who can translate strategy into execution.</p>
+                <p>This model enables organizations to move faster without the overhead of traditional consulting structures, while maintaining senior-level accountability and delivery.</p>
+
+                <div className="heroBtns">
+                  <Button 
+                    href="https://cdotimes.com/featured-executives/" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    primary
+                  >
+                    View Executive Network
+                  </Button>
+
+                  <Button href="#contact">
+                    Request Introduction
+                  </Button>
+                </div>
+
+                <div className="tag" style={{marginTop:16}}>
+                  Delivered through affiliated executive network via CDO TIMES
+                </div>
+              </Card>
+            </div>
+          </Section>
+
           <Section id="media" eyebrow="Media & Links" title="Thought Leadership, Media, and Executive Resources" subtitle="Explore articles, commentary, and executive resources across CDO TIMES, LinkedIn, and The AI-Ready Leader.">
             <div className="mediaGrid">
               <Card><h3>CDO TIMES</h3><p>Executive articles, leadership analysis, and digital transformation insights.</p><Button href="https://cdotimes.com">Visit CDO TIMES</Button></Card>
@@ -338,12 +399,12 @@ export default function CarstenKrauseWebsite() {
             </div>
           </Section>
 
-          <Section id="contact" eyebrow="Contact" title="Start the Conversation" subtitle="For keynote inquiries, executive workshops, strategic advisory discussions, or media opportunities, get in touch directly.">
+          <Section id="contact" eyebrow="Contact" title="Start the Conversation" subtitle="For keynote inquiries, executive workshops, strategic advisory discussions, executive network introductions, or media opportunities, get in touch directly.">
             <div className="contactGrid">
               <Card>
                 <div className="eyebrow">Primary Contact</div>
                 <h3 style={{wordBreak:'break-word'}}>contact@cdotimes.com</h3>
-                <p>Use this email for keynote requests, workshop inquiries, leadership advisory discussions, leadership as a service engagements and media opportunities.</p>
+                <p>Use this email for keynote requests, workshop inquiries, leadership advisory discussions, Leadership as a Service engagements, executive network introductions, and media opportunities.</p>
                 <Button href="mailto:contact@cdotimes.com" primary>Email Carsten</Button>
               </Card>
               <Card>
@@ -351,8 +412,8 @@ export default function CarstenKrauseWebsite() {
                   <div><label>Name</label><input placeholder="Your name" /></div>
                   <div><label>Company</label><input placeholder="Organization" /></div>
                   <div><label>Email</label><input placeholder="name@company.com" /></div>
-                  <div><label>Interest</label><select><option>Keynote</option><option>Workshop</option><option>Advisory</option><option>Media inquiry</option></select></div>
-                  <div className="span2"><label>What are you looking for?</label><textarea placeholder="Tell us about the event, audience, workshop goal, or advisory need." /></div>
+                  <div><label>Interest</label><select><option>Keynote</option><option>Workshop</option><option>Advisory</option><option>Executive Network Introduction</option><option>Media inquiry</option></select></div>
+                  <div className="span2"><label>What are you looking for?</label><textarea placeholder="Tell us about the event, audience, workshop goal, advisory need, or executive leadership requirement." /></div>
                 </div>
                 <div style={{marginTop: 18}}><Button href="mailto:contact@cdotimes.com" primary>Submit Inquiry</Button></div>
               </Card>
@@ -364,10 +425,11 @@ export default function CarstenKrauseWebsite() {
           <div className="container footerInner">
             <div>
               <b style={{color:'#fff'}}>Carsten Krause</b>
-              <p style={{color:'var(--muted)', margin: '8px 0 0'}}>AI-ready leadership, executive keynotes, workshops, and advisory built around HI + AI = ECI™.</p>
+              <p style={{color:'var(--muted)', margin: '8px 0 0'}}>AI-ready leadership, executive keynotes, workshops, advisory, and executive network access through CDO TIMES.</p>
             </div>
             <div className="footerLinks">
               <a href="https://cdotimes.com">CDO TIMES</a>
+              <a href="https://cdotimes.com/featured-executives/">Executive Network</a>
               <a href="mailto:contact@cdotimes.com">Contact</a>
               <a href="#book">Book</a>
               <a href="#speaking">Speaking</a>
